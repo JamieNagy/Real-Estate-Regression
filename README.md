@@ -1,25 +1,25 @@
 
 # Real Estate Price Prediction with Stacked Ensemble Model
 
-This repository contains a comprehensive analysis and machine learning project aimed at predicting real estate prices using a custom stacked ensemble regression model. The project includes rigorous Exploratory Data Analysis (EDA), advanced visualizations, individual models, and a custom stacking logic designed to optimize prediction accuracy.
+This repository contains a comprehensive analysis and machine learning project aimed at predicting real estate prices using a custom stacked ensemble regression model. The project includes rigorous Exploratory Data Analysis, advanced visualizations, individual models, and a custom stacking logic designed to optimize prediction accuracy.
 
 ## Repository Contents
 
 - **`Real Estate Stack.ipynb`**: The main Jupyter Notebook that contains the entire analysis, from data exploration to model evaluation. The notebook includes:
   - Data loading and cleaning
-  - **Rigorous Exploratory Data Analysis (EDA)** with detailed and advanced visualizations
+  - **Rigorous Exploratory Data Analysis** with detailed and advanced visualizations
   - Feature engineering and selection
   - Model training using five different algorithms:
     - **Random Forest Regressor**
     - **XGBoost Regressor**
     - **LightGBM Regressor**
     - **CatBoost Regressor**
-    - **Artificial Neural Network (ANN)**
+    - **Artificial Neural Network**
   - **Custom stacked ensemble model** that combines the predictions from the above models for improved performance, with a focus on reducing both bias and variance.
   - **Customized Optuna study** for each model's Bayesian optimization objective, tailored to maximize the model's performance.
   - Evaluation metrics including RMSE (Root Mean Squared Error) and **RMSLE (Root Mean Squared Logarithmic Error)**, with detailed analysis of model performance.
 
-- **`train.csv`**: The training dataset containing various features of the properties along with the target variable `SalePrice`.
+- **`train.csv`**: The training dataset contains various features of the properties along with the target variable `SalePrice`.
 
 - **`test.csv`**: The test dataset without the target variable `SalePrice`. This is used for final predictions using the trained model.
 
@@ -110,7 +110,6 @@ The dataset includes various features related to real estate properties. Below i
 - **SaleType**: Type of sale.
 - **SaleCondition**: Condition of sale.
 
-For a complete description of the data fields, please refer to the data description file in the dataset.
 
 ## Highlights
 
@@ -120,9 +119,9 @@ For a complete description of the data fields, please refer to the data descript
   - XGBoost Regressor
   - LightGBM Regressor
   - CatBoost Regressor
-  - Artificial Neural Network (ANN)
+  - Artificial Neural Network
   
-- **Custom Stacking Logic**: Implemented a custom stacking mechanism to combine the predictions from the above models. This approach helps to reduce the model's bias and variance, leading to better generalization on unseen data.
+- **Custom Stacking Logic**: Implemented a custom stacking mechanism to combine the predictions from the above models. This approach helps to reduce the model's bias and variance, leading to better generalization of unseen data.
 
 ### Bayesian Optimization with Optuna
 - Each model’s hyperparameters were fine-tuned using a **customized Optuna study** with a Bayesian optimization objective tailored to each model’s specific characteristics. This ensures that the models are optimized for the best performance.
@@ -131,20 +130,12 @@ For a complete description of the data fields, please refer to the data descript
 - **RMSLE (Root Mean Squared Logarithmic Error)**: This metric is emphasized for its ability to handle skewed distributions in price predictions, making it a critical measure for this project.
 - **RMSE (Root Mean Squared Error)** and **R² score**: Also included for comprehensive model evaluation and comparison.
 
-## Requirements
-
-To run the notebook and replicate the analysis, you'll need to install the required Python libraries listed in `requirements.txt`. You can install them using the following command:
-
-```bash
-pip install -r requirements.txt
-```
-
 ## How to Use
 
 1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/yourusername/real-estate-regression.git
+   git clone https://github.com/JamieNagy/Real-Estate-Regression.git
    cd real-estate-regression
    ```
 
@@ -164,8 +155,5 @@ pip install -r requirements.txt
 
 ## Results and Performance
 
-The model's performance is evaluated using various metrics such as **RMSLE**, RMSE, and R² score. Detailed results, including visualizations and comparisons of different models, are provided in the notebook.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+- **Model Performance**: Evaluated using various metrics such as **RMSLE**, RMSE, and R² score. Detailed results, including visualizations and comparisons of different models, are provided in the notebook.
+- **Final Accuracy**: The final stacked model achieved an RSMLE of 0.11, and an R² score of 0.932.
