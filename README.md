@@ -6,9 +6,8 @@ This repository contains a comprehensive analysis and machine learning project a
 ## Repository Contents
 
 - **`Real Estate Stack.ipynb`**: The main Jupyter Notebook that contains the entire analysis, from data exploration to model evaluation. The notebook includes:
-  - Data loading and cleaning
   - Rigorous Exploratory Data Analysis with detailed and advanced visualizations
-  - Feature engineering based on MI scores and visualizations from EDA.
+  - Feature Engineering and Data Preprocessing based on MI scores and visualizations from EDA.
   - Model training using five different algorithms:
     - **Random Forest Regressor**
     - **XGBoost Regressor**
