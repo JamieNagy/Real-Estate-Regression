@@ -14,6 +14,7 @@ This repository contains a comprehensive analysis and machine learning project a
     - **LightGBM Regressor**
     - **CatBoost Regressor**
     - **Artificial Neural Network**
+
   - **Custom stacked ensemble model** that combines the predictions from the above models for improved performance, with a focus on reducing both bias and variance.
   - **Customized Optuna study** for each model's Bayesian optimization objective, tailored to maximize the model's performance.
   - Evaluation metrics including RMSE (Root Mean Squared Error) and **RMSLE (Root Mean Squared Logarithmic Error)**, with detailed analysis of model performance.
