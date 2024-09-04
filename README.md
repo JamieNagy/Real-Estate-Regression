@@ -3,6 +3,12 @@
 
 This repository contains a comprehensive analysis and machine learning project aimed at predicting real estate prices using a custom stacked ensemble regression model. The project includes rigorous Exploratory Data Analysis, advanced visualizations, individual models, and a custom stacking logic designed to optimize prediction accuracy.
 
+## Model Performance
+### Individual Models
+![Individual](individual%20models.png)
+### Stacked Models
+![Stacked](stacked.png)
+
 ## Repository Contents
 
 - **`Real Estate Stack.ipynb`**: The main Jupyter Notebook that contains the entire analysis, from data exploration to model evaluation. The notebook includes:
