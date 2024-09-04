@@ -119,10 +119,11 @@ The dataset includes various features related to real estate properties. Below i
   - XGBoost Regressor
   - LightGBM Regressor
   - CatBoost Regressor
-  - Artificial Neural Network
+  - Artificial Neural Network (with TensorFlow)
   
 - **Custom Stacking Logic**: Implemented a custom stacking mechanism to combine the predictions from the above models. This approach helps to reduce the model's bias and variance, leading to better generalization of unseen data.
-- **Customized loss function for ANN**: 
+- **Customized loss function for ANN**: Designed an RMSLE loss function for the ANN to enhance performance on real estate data.
+- **Customized Scoring Function for Optuna Study**: Created a custom scoring function in Optuna to optimize model hyperparameters.
 
 ### Bayesian Optimization with Optuna
 - Each model’s hyperparameters were fine-tuned using a **customized Optuna study** with a Bayesian optimization objective tailored to each model’s specific characteristics. This ensures that the models are optimized for the best performance.
