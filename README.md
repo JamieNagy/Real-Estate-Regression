@@ -122,6 +122,7 @@ The dataset includes various features related to real estate properties. Below i
   - Artificial Neural Network
   
 - **Custom Stacking Logic**: Implemented a custom stacking mechanism to combine the predictions from the above models. This approach helps to reduce the model's bias and variance, leading to better generalization of unseen data.
+- **Customized loss function for ANN**: 
 
 ### Bayesian Optimization with Optuna
 - Each model’s hyperparameters were fine-tuned using a **customized Optuna study** with a Bayesian optimization objective tailored to each model’s specific characteristics. This ensures that the models are optimized for the best performance.
