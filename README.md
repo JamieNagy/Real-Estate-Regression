@@ -135,8 +135,10 @@ The dataset includes various features related to real estate properties. Below i
 - Each model’s hyperparameters were fine-tuned using a **customized Optuna study** with a Bayesian optimization objective tailored to each model’s specific characteristics. This ensures that the models are optimized for the best performance.
 
 ### Performance Metrics
-- **RMSLE**: The stacked model achieved a RMSLE as low as 0.11.
-- **R² score** and **Adjusted R² score**: The stacked model achieved a R² score and a Adjusted R² score both around 0.93! This is very impressive as there are almost 80 features.
+- **MSE**
+- **RMSE**
+- **RMSLE**
+- **R² score** and **Adjusted R² score**
 
 ## How to Use
 
@@ -164,4 +166,4 @@ The dataset includes various features related to real estate properties. Below i
 ## Results and Performance
 
 - **Model Performance**: Evaluated using various metrics such as **RMSLE**, RMSE, and R² score. Detailed results, including visualizations and comparisons of different models, are provided in the notebook.
-- **Final Accuracy**: The final stacked model achieved an RSMLE of 0.11, and an R² score of 0.932.
+- **Final Accuracy**: The final stacked model achieved an RSMLE as low as 0.11 and, an R² score and an Adjusted R² both around 0.93 with a difference of less than 0.002! This means my feature engineering is terrific.
