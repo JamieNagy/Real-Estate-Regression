@@ -23,7 +23,7 @@ This repository contains a comprehensive analysis and machine learning project a
 
   - **Custom stacked ensemble model** that combines the predictions from the above models for improved performance, with a focus on reducing both bias and variance.
   - **Customized Optuna study** for each model's Bayesian optimization objective, tailored to maximize the model's performance.
-  - Evaluation metrics including **Adjusted R^2** and **RMSLE**, with detailed analysis of model performance.
+  - Evaluation metrics including **Adjusted R²** and **RMSLE**, with detailed analysis of model performance.
 
 - **`train.csv`**: The training dataset contains various features of the properties along with the target variable `SalePrice`.
 
