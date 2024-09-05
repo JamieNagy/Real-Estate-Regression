@@ -23,7 +23,7 @@ This repository contains a comprehensive analysis and machine learning project a
 
   - **Custom stacked ensemble model** that combines the predictions from the above models for improved performance, with a focus on reducing both bias and variance.
   - **Customized Optuna study** for each model's Bayesian optimization objective, tailored to maximize the model's performance.
-  - Evaluation metrics including RMSE (Root Mean Squared Error) and **RMSLE (Root Mean Squared Logarithmic Error)**, with detailed analysis of model performance.
+  - Evaluation metrics including **Adjusted R^2** and **RMSLE**, with detailed analysis of model performance.
 
 - **`train.csv`**: The training dataset contains various features of the properties along with the target variable `SalePrice`.
 
@@ -135,8 +135,8 @@ The dataset includes various features related to real estate properties. Below i
 - Each model’s hyperparameters were fine-tuned using a **customized Optuna study** with a Bayesian optimization objective tailored to each model’s specific characteristics. This ensures that the models are optimized for the best performance.
 
 ### Performance Metrics
-- **RMSLE (Root Mean Squared Logarithmic Error)**: This metric is emphasized for its ability to handle skewed distributions in price predictions, making it a critical measure for this project.
-- **RMSE (Root Mean Squared Error)** and **R² score**: Also included for comprehensive model evaluation and comparison.
+- **RMSLE**: The stacked model achieved a RMSLE as low as 0.11.
+- **R² score** and **Adjusted R² score**: The stacked model achieved a R² score and a Adjusted R² score both around 0.93! This is very impressive as there are almost 80 features.
 
 ## How to Use
 
